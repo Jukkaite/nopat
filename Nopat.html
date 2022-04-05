@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="javaScript5.css">
+
+    
+</head>
+<script>
+    function arvoluvut(){
+    var noppa1 = Math.floor(Math.random() * 6)+1;
+    var noppa2 = Math.floor(Math.random() * 6)+1;
+    document.getElementById("luku1").innerHTML = noppa1;
+    document.getElementById("luku2").innerHTML = noppa2;
+    Math.floor(Math.random() * 6)+1;
+    if(noppa1 == 1){
+    // näytetään noppakuva, jossa nopan silmäluku on 1
+    document.getElementById('kuva1').src='dice1.png'
+    }
+
+    if(noppa1 == 2){
+    // näytetään noppakuva, jossa nopan silmäluku on 1
+    document.getElementById('kuva1').src='dice2.png'
+    }
+    if(noppa1 == 3){
+    // näytetään noppakuva, jossa nopan silmäluku on 1
+    document.getElementById('kuva1').src='dice3.png'
+    }
+    if(noppa1 == 4){
+    // näytetään noppakuva, jossa nopan silmäluku on 1
+    document.getElementById('kuva1').src='dice4.png'
+    }
+    if(noppa1 == 5){
+    // näytetään noppakuva, jossa nopan silmäluku on 1
+    document.getElementById('kuva1').src='dice5.png'
+    }
+    if(noppa1 == 6){
+    // näytetään noppakuva, jossa nopan silmäluku on 1
+    document.getElementById('kuva1').src='dice6.png'
+    }
+    if(noppa2 == 1){
+    // näytetään noppakuva, jossa nopan silmäluku on 1
+    document.getElementById('kuva2').src='dice1.png'
+    }
+    if(noppa2 == 2){
+    // näytetään noppakuva, jossa nopan silmäluku on 1
+    document.getElementById('kuva2').src='dice2.png'
+    }
+    if(noppa2 == 3){
+    // näytetään noppakuva, jossa nopan silmäluku on 1
+    document.getElementById('kuva2').src='dice3.png'
+    }
+    if(noppa2 == 4){
+    // näytetään noppakuva, jossa nopan silmäluku on 1
+    document.getElementById('kuva2').src='dice4.png'
+    }
+    if(noppa2 == 5){
+    // näytetään noppakuva, jossa nopan silmäluku on 1
+    document.getElementById('kuva2').src='dice5.png'
+    }
+    if(noppa2 == 6){
+    // näytetään noppakuva, jossa nopan silmäluku on 1
+    document.getElementById('kuva2').src='dice6.png'
+    }
+    if (noppa1 > noppa2)
+    {
+        document.querySelector('h1').innerHTML = 'pelaaja 1 voittaa';
+    }
+    if  (noppa1 < noppa2)
+    {
+        document.querySelector('h1').innerHTML = 'pelaaja 2 voittaa';
+    }
+    if (noppa1 == noppa2){
+        document.querySelector('h1').innerHTML = 'tasapeli';
+    }
+    }
+    </script>
+<body>
+    <button onclick="arvoluvut()"> Arvo luvut </button>
+<div class="noppa-alue">
+        <p>Pelaaja 1</p>
+        <p id="luku1"> </p>
+        <img id="kuva1" width= "100"></img> 
+        
+    </div>
+    
+    <div class="noppa-alue">
+        <p>Pelaaja 2</p>
+        <p id="luku2"> </p>
+        <img id="kuva2" width= "100"></img>
+    
+     </div>
+
+     <div class="wrapper">
+        <h1></h1>
+
+    </div>
+    
+    
+</body>
+</html> 
